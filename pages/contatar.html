@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta lang="pt-br" charset="UTF-8">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--CSS externo-->
+    <link rel="stylesheet" href="../css/contatar.css">
+</head>
+<body>
+    <div>
+        <nav>
+          <div class="nav-wrapper">
+            <a class="brand-logo left"><i class="large material-icons" style="color: snow;">business</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="identificacao.html" target="meu_curriculo">Identificação</a></li>
+              <li><a href="formacao.html" target="meu_curriculo">Formação</a></li>
+              <li><a href="experiencia.html" target="meu_curriculo">Experiência</a></li>
+              <li><a href="skills.html" target="meu_curriculo">Skills</a></li>
+              <li class="active"><a href="contatar.html" target="meu_curriculo">Inscreva-se</a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <div class="row container">
+        <form class="col s12">
+        <fieldset>
+        <legend>Forms de contato</legend>
+        <div class="row">
+            <div class="input-field col s6">
+                <input placeholder="Insira seu nome" id="nome" type="text" class="validate">
+                <label class="active" for="nome">Nome:</label>
+            </div>
+            <div class="input-field col s6">
+                <input placeholder="Insira seu sobrenome" id="sobrenome" type="text" class="validate">
+                <label class="active" for="sobrenome">Sobrenome:</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s1">
+                <input id="idade" type="number" class="validate">
+                <label class="active" for="idade">Idade:</label>
+            </div>
+            <div class="input-field col s11">
+                <input placeholder="Insira seu e-mail" id="email" type="email" class="validate">
+                <label class="active" for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <form action="#">
+                    <label>Sexo: </label>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio"/>
+                        <span>Masculino</span>
+                      </label>
+                      <label>
+                        <input name="group1" type="radio"/>
+                        <span>Feminino</span>
+                      </label>
+                    </p>
+                  </form>
+            </div>
+        </div>
+        <div>
+            <form action="#">
+                <label>Foto: </label>
+                <div class="file-field input-field row">
+                  <div class="btn">
+                    <span>Escolher arquivo</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper col s3">
+                    <input class="file-path validate" type="text">
+                  </div>
+                </div>
+            </form>
+        </div>
+        </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>

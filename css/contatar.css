@@ -1,0 +1,17 @@
+i{
+    color: #bd4242;
+    margin-top: 5%;
+    margin-left: 47%;
+    margin-bottom: 5%;
+}
+.input-field input:focus {
+    border-bottom: 1px solid #bd4242 !important;
+    box-shadow: 0 1px 0 0 #bd4242 !important;
+}
+.input-field input:focus + label {
+    color: #bd4242 !important;
+}
+[type="radio"]:checked +span:before, [type="radio"]:checked +span:after {
+    background-color: #bd4242;
+    border: #bd4242;
+}
