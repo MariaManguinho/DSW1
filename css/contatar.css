@@ -1,5 +1,5 @@
-i{
-    color: #bd4242;
+.icons{
+    color: snow;
     margin-top: 5%;
     margin-left: 47%;
     margin-bottom: 5%;
@@ -11,7 +11,26 @@ i{
 .input-field input:focus + label {
     color: #bd4242 !important;
 }
-[type="radio"]:checked +span:before, [type="radio"]:checked +span:after {
+[type="radio"]:checked +span:after, [type="radio"].with-gap:checked +span:before, [type="radio"].with-gap:checked +span:after{
+    border: 2px solid #bd4242;
+}
+[type="radio"]:checked +span:after, [type="radio"].with-gap:checked +span:after{
     background-color: #bd4242;
-    border: #bd4242;
+}
+[type="checkbox"].filled-in:checked +span:not(.lever):after{
+    border: 2px solid #bd4242;
+    background-color: #cd5c5c;
+}
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-right: 2px solid #bd4242;
+    border-bottom: 2px solid #bd4242;
+}
+.cor{
+    background-color: #e66464 !important;
+}
+.espaco{
+    margin-left: 1%;
+}
+.cabecalho{
+    margin-top: 5%;
 }
