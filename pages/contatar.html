@@ -24,9 +24,9 @@
         </nav>
     </div>
     <div class="row container cabecalho">
-        <form class="col s12">
+        <form id="forms" method="post" onsubmit="return verificar()" class="col s12">
         <fieldset>
-        <legend>Formulário de Inscrição</legend>
+        <legend class="titulo">Formulário de Inscrição</legend>
         <div class="row">
             <div class="input-field col s6">
                 <input placeholder="Insira seu nome" id="nome" type="text" class="validate">
@@ -39,7 +39,7 @@
         </div>
         <div class="row">
             <div class="input-field col s1">
-                <input placeholder="0" id="idade" type="number" class="validate">
+                <input placeholder="0" id="idade" type="number" min="18" max="120" class="validate">
                 <label class="active" for="idade">Idade:</label><br>
             </div>
             <div class="input-field col s11">
@@ -50,14 +50,14 @@
         <div class="row">
             <div class="col s12">
                 <form action="#">
-                    <label>Sexo: </label>
+                    <label for="sexo">Sexo: </label>
                     <p>
                       <label>
-                        <input class="with-gap" name="group1" type="radio"/>
+                        <input class="with-gap" id="sexo" name="group1" type="radio" value="1"/>
                         <span>Masculino</span>
                       </label>
                       <label>
-                        <input class="with-gap" name="group1" type="radio"/>
+                        <input class="with-gap" id="sexo" name="group1" type="radio" value="2"/>
                         <span>Feminino</span>
                       </label>
                     </p>
@@ -71,10 +71,10 @@
                 <div class="btn waves-effect waves-light cor">
                   <span>Escolher arquivo</span>
                   <i class="material-icons right">attach_file</i>
-                  <input type="file">
+                  <input type="file" required accept="image/jpeg, image/png">
                 </div>
                 <div class="file-path-wrapper col s3">
-                  <input class="file-path validate" type="text">
+                  <input class="file-path validate" id="arquivo" type="text">
                 </div>
               </div>
           </form>
@@ -90,7 +90,7 @@
             <label>País:</label>
           </div>
           <div class="input-field col s12 m6">
-            <select multiple>
+            <select multiple id="linguagem">
               <option value="1">C#</option>
               <option value="2">C</option>
               <option value="3">Java</option>
@@ -103,15 +103,15 @@
               <label class="col s2">Áreas de atuação:</label>
               <p>
                 <label class="col s2">
-                  <input type="checkbox" class="filled-in" />
+                  <input id="area" value="1" type="checkbox" class="filled-in" />
                   <span>Computação</span>
                 </label>
                 <label class="col s2">
-                  <input type="checkbox" class="filled-in"/>
+                  <input id="area" value="2" type="checkbox" class="filled-in"/>
                   <span>Pedagogia</span>
                 </label>
                 <label class="col s2">
-                  <input type="checkbox" class="filled-in"/>
+                  <input id="area" value="3" type="checkbox" class="filled-in"/>
                   <span>Gestão</span>
                 </label>
               </p>
@@ -119,9 +119,9 @@
           </div>
           <div class="row">
             <div class="col s12">
-              <button class="btn waves-effect waves-light cor espaco" type="submit" name="action">ENVIAR<i class="material-icons right">send</i>
+              <button class="btn waves-effect waves-light cor espaco" type="submit" value="enviar">ENVIAR<i class="material-icons right">send</i>
               </button>
-              <button class="btn waves-effect waves-light cor espaco" name="action">LIMPAR<i class="material-icons right">delete</i>
+              <button class="btn waves-effect waves-light cor espaco" type="reset" value="limpar">LIMPAR<i class="material-icons right">delete</i>
               </button>
             </div>
           </div>
@@ -129,15 +129,8 @@
         </fieldset>
         </form>
     </div>
-
     <!--JavaScript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('select');
-        M.FormSelect.init(elems)
-      })
-    </script>
-    
+    <script src="../js/contatar.js"></script>
 </body>
 </html>
