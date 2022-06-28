@@ -1,2 +1,7 @@
-# DSW1
- Atvidades da cadeira de "Desenvolvimento de Sistemas Web 1" utilizando as seguintes tecnologias: HTML5, CSS3 e JS.
+<h1 align="center">Currículo de Maria Manguinho 👩‍💻</h1>
+
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#1572B6</font></font>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#1572B6</font></font>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#F7DF1E</font></font>
+
+<p align="center">Site construído no intuito de apresentar a pessoa em questão.</p>
